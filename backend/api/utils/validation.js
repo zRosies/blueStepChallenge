@@ -3,7 +3,7 @@
 export function validationTypes(fieldName, value) {
   // Using regex to check if the patterns match.
   // As the test function returns true or false, I use ternary operators to display the error message in case there is one.
-  // Emergency is the only field that won't be required
+  // Emergency contact is the only field that won't be required
   switch (fieldName) {
     case "name":
       return /^[A-Za-z\s]+$/.test(value.trim())
@@ -14,7 +14,7 @@ export function validationTypes(fieldName, value) {
         ? null
         : { error: "City must contain only letters and spaces" };
     case "address":
-      return /^[A-Za-z\s]+$/.test(value.trim())
+      return /^[A-Za-z0-9\s]+$/.test(value.trim())
         ? null
         : { error: "Address must contain only letters and spaces" };
     case "state":

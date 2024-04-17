@@ -1,5 +1,7 @@
 import { validate } from "../utils/validation.js";
 import { newUserObject } from "../lib/db.js";
+// In case you want to instantiate new user object here just unccoment below
+// import { UserHelper} from '../lib/db.js'
 
 //  --------------------------------- MOCK API ---------------------------------------
 
@@ -21,7 +23,7 @@ export async function mockAPI(userInfo) {
   // ---------------------------------------------------------------------------------
   try {
     // I am already exporting the object instead of instatiating it here
-    // But you can also instatiate it here
+    // But you can also instantiate it here using const newUser = new UserHelper();
 
     //--------------------- 2 - Then uncomment the objects below  ---------------------
     const newUser = newUserObject;
