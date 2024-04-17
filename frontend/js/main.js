@@ -21,7 +21,7 @@ async function sendDataForm(e) {
   //   headers: {
   //     "Content-Type": "application/json",
   //   },
-  //   body: JSON.stringify(response),
+  //   body: JSON.stringify(userInfo),
 
   // Just pretending
   const response = await mockAPI(userInfo);
