@@ -22,6 +22,7 @@ async function sendDataForm(e) {
   //     "Content-Type": "application/json",
   //   },
   //   body: JSON.stringify(userInfo),
+  console.log(userInfo);
 
   // Just pretending
   const response = await mockAPI(userInfo);
@@ -44,7 +45,7 @@ async function sendDataForm(e) {
   div.style.display = "none";
   success.style.display = "flex";
   blackBackground.style.display = "flex";
-
+  console.log("The log response below is intetional");
   console.log(response);
 }
 

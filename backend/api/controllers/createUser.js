@@ -1,6 +1,6 @@
 import { validate } from "../utils/validation.js";
 import { newUserObject } from "../lib/db.js";
-// In case you want to instantiate new user object here just unccoment below
+// In case you want to instantiate new user object here just unccoment the import below
 // import { UserHelper} from '../lib/db.js'
 
 //  --------------------------------- MOCK API Controller ---------------------------------------
