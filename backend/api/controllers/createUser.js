@@ -3,11 +3,12 @@ import { newUserObject } from "../lib/db.js";
 // In case you want to instantiate new user object here just unccoment below
 // import { UserHelper} from '../lib/db.js'
 
-//  --------------------------------- MOCK API ---------------------------------------
+//  --------------------------------- MOCK API Controller ---------------------------------------
 
 // Follow the steps (1 - 4) to uncomment the code
-// Added status and error fields just for fun.
+
 export async function mockAPI(userInfo) {
+  // Added status and error fields just for fun.
   // Bonus here \/
 
   // ------------------------ 1- Uncomment the validation below ----------------------
@@ -25,7 +26,7 @@ export async function mockAPI(userInfo) {
     // I am already exporting the object instead of instatiating it here
     // But you can also instantiate it here using const newUser = new UserHelper();
 
-    //--------------------- 2 - Then uncomment the objects below  ---------------------
+    //--------------------- 2 - Then uncomment the object below  ---------------------
     const newUser = newUserObject;
     newUser.setAll(userInfo);
     // -------------------------------------------------------------------------------
@@ -33,7 +34,7 @@ export async function mockAPI(userInfo) {
     // If you want to check a mock Lib/DB error uncommetting one of these constructors below
     // newUser.setZip(null);
     // newUser.setName(null);
-    // newUser.setEmail(null);
+    // newUser.setCity(null);
 
     // ------------------------- 2- Then uncomment the object below  --------------------
     const response = newUser.save();
@@ -63,15 +64,16 @@ export async function mockAPI(userInfo) {
         error: "Error during user creation",
       };
     }
-    //-------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------
 
-    // -------- 4- Comment the block below when you uncomment the previous code -----------
+    // ----- 4- Comment the block below below when you uncomment all the blocks above -----
     // return {
     //   message: "user added to the database",
     //   result: true,
     //   status: 201,
     //   error: null,
     // };
+    // ------------------------------------------------------------------------------------
   } catch (error) {
     return {
       message: error.message,

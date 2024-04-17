@@ -45,7 +45,7 @@ async function sendDataForm(e) {
   success.style.display = "flex";
   blackBackground.style.display = "flex";
 
-  // console.log(response);
+  console.log(response);
 }
 
 form.addEventListener("submit", sendDataForm);

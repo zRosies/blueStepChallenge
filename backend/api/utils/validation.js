@@ -3,16 +3,14 @@
 export function validationTypes(fieldName, value) {
   // Using regex to check if the patterns match.
   // As the test function returns true or false, I use ternary operators to display the error message in case there is one.
-  // Emergency contact is the only field that won't be required
+
+  // Bonus
+  // Emergency contact and city are the only fields that won't be required
   switch (fieldName) {
     case "name":
       return /^[A-Za-z\s]+$/.test(value.trim())
         ? null
         : { error: "Name must contain only letters and spaces" };
-    case "city":
-      return /^[A-Za-z\s]+$/.test(value.trim())
-        ? null
-        : { error: "City must contain only letters and spaces" };
     case "address":
       return /^[A-Za-z0-9\s]+$/.test(value.trim())
         ? null
@@ -40,7 +38,6 @@ export function validationTypes(fieldName, value) {
 // it loops through the JSON fields and checking if the patterns established previously don't match.
 
 export function validate(jsonObject) {
-  console.log(jsonObject);
   for (const fieldName in jsonObject) {
     if (jsonObject.hasOwnProperty(fieldName)) {
       // Here it will show the first error message in the JSON and break the loop.

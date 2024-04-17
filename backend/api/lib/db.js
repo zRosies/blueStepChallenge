@@ -44,10 +44,11 @@ export class UserHelper {
 
   save() {
     // Checking for errors here before adding to the 'database'
+    // Emergency and city are not required fields in the 'database'
     for (const key in this.userInfo) {
-      // Emergency is not a required field in the 'database'
       if (
         key != "emergency" &&
+        key != "city" &&
         (this.userInfo[key] == null || this.userInfo[key] === "")
       ) {
         return false;
