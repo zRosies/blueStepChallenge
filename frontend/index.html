@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blue Step Challenge</title>
+    <!-- This link is used to import boostrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <!--- Challenge development here -->
+    <link rel="icon" href="./assets/image.png" />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+
+  <!-- Bootstrap part is used on focus in the input components and on the submit button -->
+  <body>
+    <main>
+      <div class="divider">
+        <h1>Let's <span>make</span> something <span>amazing</span> together</h1>
+        <form class="mw-50">
+          <div>
+            <label for="name">Name</label>
+            <input
+              type="name"
+              class="form-control"
+              id="name"
+              placeholder="Name"
+              required
+            />
+          </div>
+          <div class="">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="email@gmail.com"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input
+              type="text"
+              class="form-control"
+              id="address"
+              placeholder="1234 Main St"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="emergency">Emergency Contact</label>
+            <input
+              type="phone"
+              class="form-control"
+              id="emergency"
+              placeholder="xx-xxxx-xxxx"
+            />
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="city">City</label>
+              <input
+                type="text"
+                class="form-control"
+                id="city"
+                placeholder="Rexbug"
+                required
+              />
+            </div>
+            <div class="form-group col-md-4">
+              <label for="state">State</label>
+              <input
+                type="text"
+                id="state"
+                class="form-control"
+                placeholder="Idaho"
+                required
+              />
+            </div>
+
+            <div class="form-group col-md-2">
+              <label for="zip">Zip</label>
+              <input
+                type="text"
+                placeholder="90210"
+                class="form-control"
+                id="zip"
+              />
+            </div>
+            <div class="message">
+              <p id="error"></p>
+              <i id="error" class="fa-solid fa-circle-exclamation"></i>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary text-white send">
+            Send
+          </button>
+        </form>
+      </div>
+      <div class="blue">
+        <h2>Welcome to Blue Step</h2>
+        <p>Please, fill out the form so we can get in touch!</p>
+        <img src="../frontend/assets/team.png" alt="simple_banner" />
+        <p>Our priority is to take care of your welfare.</p>
+        <p>Do you want to know more?</p>
+        <a href="https://www.linkedin.com/company/bluestep/" target="_blnak"
+          >Follow us</a
+        >
+      </div>
+      <div class="success">
+        <p>Form sent successfuly</p>
+        <i id="check" class="fa-regular fa-circle-check"></i>
+      </div>
+      <div id="black"></div>
+    </main>
+  </body>
+
+  <script type="module" src="./js/main.js"></script>
+
+  <!-- Bootstrap scripts -->
+  <!-- Most of bootstrap components and features requires js scripts to work -->
+  <script
+    src="https://kit.fontawesome.com/7393b3984f.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"
+  ></script>
+</html>
