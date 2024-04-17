@@ -5,7 +5,7 @@ import { newUserObject } from "../lib/db.js";
 
 //  --------------------------------- MOCK API Controller ---------------------------------------
 
-// Follow the steps (1 - 4) to uncomment the code
+// Follow the steps (1 - 5) to uncomment the code
 
 export async function mockAPI(userInfo) {
   // Added status and error fields just for fun.
@@ -36,7 +36,7 @@ export async function mockAPI(userInfo) {
     // newUser.setName(null);
     // newUser.setCity(null);
 
-    // ------------------------- 2- Then uncomment the object below  --------------------
+    // ------------------------- 3 - Then uncomment the response below  --------------------
     const response = newUser.save();
     // ------------------------------------------------------------------------------------
 
@@ -48,7 +48,7 @@ export async function mockAPI(userInfo) {
     // newUser.setCity('city');
     // newUser.setZip('zip');
 
-    // ----------------------- 3- Then uncomment the responses below  --------------------
+    // ----------------------- 4 - Then uncomment the responses below  --------------------
     if (response) {
       return {
         message: "user added to the database",
@@ -66,7 +66,7 @@ export async function mockAPI(userInfo) {
     }
     // ------------------------------------------------------------------------------------
 
-    // ----- 4- Comment the block below below when you uncomment all the blocks above -----
+    // ----- 5 - Comment the block below below when you uncomment all the blocks above -----
     // return {
     //   message: "user added to the database",
     //   result: true,
